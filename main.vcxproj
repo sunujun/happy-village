@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{972C8D08-1BC8-4D63-8B78-391A205752B6}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>main</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CCardDlg.h" />
+    <ClInclude Include="CDeckDlg.h" />
+    <ClInclude Include="CDogPigDlg.h" />
+    <ClInclude Include="CMyEdit.h" />
+    <ClInclude Include="CNameDlg.h" />
+    <ClInclude Include="CResultDlg.h" />
+    <ClInclude Include="CStageDlg.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="mainDlg.h" />
+    <ClInclude Include="PlayGame.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Unit.h" />
+    <ClInclude Include="UnitTime.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CCardDlg.cpp" />
+    <ClCompile Include="CDeckDlg.cpp" />
+    <ClCompile Include="CDogPigDlg.cpp" />
+    <ClCompile Include="CMyEdit.cpp" />
+    <ClCompile Include="CNameDlg.cpp" />
+    <ClCompile Include="CResultDlg.cpp" />
+    <ClCompile Include="CStageDlg.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainDlg.cpp" />
+    <ClCompile Include="PlayGame.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="UnitTime.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="main.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\main.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\archerCard.bmp" />
+    <Image Include="..\..\Desktop\1\100000_soldierR_0.bmp" />
+    <Image Include="..\..\Desktop\1\100000_soldierR_1.bmp" />
+    <Image Include="..\..\Desktop\1\100000_soldierR_2.bmp" />
+    <Image Include="..\..\Desktop\1\100000_soldierR_3.bmp" />
+    <Image Include="..\..\Desktop\1\100000_soldier_0.bmp" />
+    <Image Include="..\..\Desktop\1\100000_soldier_1.bmp" />
+    <Image Include="..\..\Desktop\1\100000_soldier_2.bmp" />
+    <Image Include="..\..\Desktop\1\100000_soldier_3.bmp" />
+    <Image Include="..\..\Desktop\1\100001_archerR_0.bmp" />
+    <Image Include="..\..\Desktop\1\100001_archerR_1.bmp" />
+    <Image Include="..\..\Desktop\1\100001_archerR_2.bmp" />
+    <Image Include="..\..\Desktop\1\100001_archerR_3.bmp" />
+    <Image Include="..\..\Desktop\1\100001_archer_0.bmp" />
+    <Image Include="..\..\Desktop\1\100001_archer_1.bmp" />
+    <Image Include="..\..\Desktop\1\100001_archer_2.bmp" />
+    <Image Include="..\..\Desktop\1\100001_archer_3.bmp" />
+    <Image Include="..\..\Desktop\1\100002_warriorR_0.bmp" />
+    <Image Include="..\..\Desktop\1\100002_warriorR_1.bmp" />
+    <Image Include="..\..\Desktop\1\100002_warriorR_2.bmp" />
+    <Image Include="..\..\Desktop\1\100002_warriorR_3.bmp" />
+    <Image Include="..\..\Desktop\1\100002_warrior_0.bmp" />
+    <Image Include="..\..\Desktop\1\100002_warrior_1.bmp" />
+    <Image Include="..\..\Desktop\1\100002_warrior_2.bmp" />
+    <Image Include="..\..\Desktop\1\100002_warrior_3.bmp" />
+    <Image Include="..\..\Desktop\1\100003_artiR_0.bmp" />
+    <Image Include="..\..\Desktop\1\100003_artiR_1.bmp" />
+    <Image Include="..\..\Desktop\1\100003_artiR_2.bmp" />
+    <Image Include="..\..\Desktop\1\100003_artiR_3.bmp" />
+    <Image Include="..\..\Desktop\1\100003_arti_0.bmp" />
+    <Image Include="..\..\Desktop\1\100003_arti_1.bmp" />
+    <Image Include="..\..\Desktop\1\100003_arti_2.bmp" />
+    <Image Include="..\..\Desktop\1\100003_arti_3.bmp" />
+    <Image Include="..\..\Desktop\1\100004_skt_archerR_0.bmp" />
+    <Image Include="..\..\Desktop\1\100004_skt_archerR_1.bmp" />
+    <Image Include="..\..\Desktop\1\100004_skt_archerR_2.bmp" />
+    <Image Include="..\..\Desktop\1\100004_skt_archerR_3.bmp" />
+    <Image Include="..\..\Desktop\1\100004_skt_archer_0.bmp" />
+    <Image Include="..\..\Desktop\1\100004_skt_archer_1.bmp" />
+    <Image Include="..\..\Desktop\1\100004_skt_archer_2.bmp" />
+    <Image Include="..\..\Desktop\1\100004_skt_archer_3.bmp" />
+    <Image Include="..\..\Desktop\1\100005_greenyR_0.bmp" />
+    <Image Include="..\..\Desktop\1\100005_greenyR_1.bmp" />
+    <Image Include="..\..\Desktop\1\100005_greenyR_2.bmp" />
+    <Image Include="..\..\Desktop\1\100005_greenyR_3.bmp" />
+    <Image Include="..\..\Desktop\1\100005_greeny_0.bmp" />
+    <Image Include="..\..\Desktop\1\100005_greeny_1.bmp" />
+    <Image Include="..\..\Desktop\1\100005_greeny_2.bmp" />
+    <Image Include="..\..\Desktop\1\100005_greeny_3.bmp" />
+    <Image Include="..\..\Desktop\1\100006_skt_artiR_0.bmp" />
+    <Image Include="..\..\Desktop\1\100006_skt_artiR_1.bmp" />
+    <Image Include="..\..\Desktop\1\100006_skt_artiR_2.bmp" />
+    <Image Include="..\..\Desktop\1\100006_skt_artiR_3.bmp" />
+    <Image Include="..\..\Desktop\1\100006_skt_arti_0.bmp" />
+    <Image Include="..\..\Desktop\1\100006_skt_arti_1.bmp" />
+    <Image Include="..\..\Desktop\1\100006_skt_arti_2.bmp" />
+    <Image Include="..\..\Desktop\1\100006_skt_arti_3.bmp" />
+    <Image Include="..\..\Desktop\1\101000_knightR_0.bmp" />
+    <Image Include="..\..\Desktop\1\101000_knightR_1.bmp" />
+    <Image Include="..\..\Desktop\1\101000_knightR_2.bmp" />
+    <Image Include="..\..\Desktop\1\101000_knightR_3.bmp" />
+    <Image Include="..\..\Desktop\1\101000_knight_0.bmp" />
+    <Image Include="..\..\Desktop\1\101000_knight_1.bmp" />
+    <Image Include="..\..\Desktop\1\101000_knight_2.bmp" />
+    <Image Include="..\..\Desktop\1\101000_knight_3.bmp" />
+    <Image Include="..\..\Desktop\1\101001_sniperR_0.bmp" />
+    <Image Include="..\..\Desktop\1\101001_sniperR_1.bmp" />
+    <Image Include="..\..\Desktop\1\101001_sniperR_2.bmp" />
+    <Image Include="..\..\Desktop\1\101001_sniperR_3.bmp" />
+    <Image Include="..\..\Desktop\1\101001_sniper_0.bmp" />
+    <Image Include="..\..\Desktop\1\101001_sniper_1.bmp" />
+    <Image Include="..\..\Desktop\1\101001_sniper_2.bmp" />
+    <Image Include="..\..\Desktop\1\101001_sniper_3.bmp" />
+    <Image Include="..\..\Desktop\1\101002_strong_warriorR_0.bmp" />
+    <Image Include="..\..\Desktop\1\101002_strong_warriorR_1.bmp" />
+    <Image Include="..\..\Desktop\1\101002_strong_warriorR_2.bmp" />
+    <Image Include="..\..\Desktop\1\101002_strong_warriorR_3.bmp" />
+    <Image Include="..\..\Desktop\1\101002_strong_warrior_0.bmp" />
+    <Image Include="..\..\Desktop\1\101002_strong_warrior_1.bmp" />
+    <Image Include="..\..\Desktop\1\101002_strong_warrior_2.bmp" />
+    <Image Include="..\..\Desktop\1\101002_strong_warrior_3.bmp" />
+    <Image Include="..\..\Desktop\1\101003_fatal_artiR_0.bmp" />
+    <Image Include="..\..\Desktop\1\101003_fatal_artiR_1.bmp" />
+    <Image Include="..\..\Desktop\1\101003_fatal_artiR_2.bmp" />
+    <Image Include="..\..\Desktop\1\101003_fatal_artiR_3.bmp" />
+    <Image Include="..\..\Desktop\1\101003_fatal_arti_0.bmp" />
+    <Image Include="..\..\Desktop\1\101003_fatal_arti_1.bmp" />
+    <Image Include="..\..\Desktop\1\101003_fatal_arti_2.bmp" />
+    <Image Include="..\..\Desktop\1\101003_fatal_arti_3.bmp" />
+    <Image Include="..\..\Desktop\1\101004_spearR_0.bmp" />
+    <Image Include="..\..\Desktop\1\101004_spearR_1.bmp" />
+    <Image Include="..\..\Desktop\1\101004_spearR_2.bmp" />
+    <Image Include="..\..\Desktop\1\101004_spearR_3.bmp" />
+    <Image Include="..\..\Desktop\1\101004_spear_0.bmp" />
+    <Image Include="..\..\Desktop\1\101004_spear_1.bmp" />
+    <Image Include="..\..\Desktop\1\101004_spear_2.bmp" />
+    <Image Include="..\..\Desktop\1\101004_spear_3.bmp" />
+    <Image Include="..\..\Desktop\1\101005_skt_soldierR_0.bmp" />
+    <Image Include="..\..\Desktop\1\101005_skt_soldierR_1.bmp" />
+    <Image Include="..\..\Desktop\1\101005_skt_soldierR_2.bmp" />
+    <Image Include="..\..\Desktop\1\101005_skt_soldierR_3.bmp" />
+    <Image Include="..\..\Desktop\1\101005_skt_soldier_0.bmp" />
+    <Image Include="..\..\Desktop\1\101005_skt_soldier_1.bmp" />
+    <Image Include="..\..\Desktop\1\101005_skt_soldier_2.bmp" />
+    <Image Include="..\..\Desktop\1\101005_skt_soldier_3.bmp" />
+    <Image Include="..\..\Desktop\1\101006_bone_archerR_0.bmp" />
+    <Image Include="..\..\Desktop\1\101006_bone_archerR_1.bmp" />
+    <Image Include="..\..\Desktop\1\101006_bone_archerR_2.bmp" />
+    <Image Include="..\..\Desktop\1\101006_bone_archerR_3.bmp" />
+    <Image Include="..\..\Desktop\1\101006_bone_archer_0.bmp" />
+    <Image Include="..\..\Desktop\1\101006_bone_archer_1.bmp" />
+    <Image Include="..\..\Desktop\1\101006_bone_archer_2.bmp" />
+    <Image Include="..\..\Desktop\1\101006_bone_archer_3.bmp" />
+    <Image Include="..\..\Desktop\1\102000_sword_masterR_0.bmp" />
+    <Image Include="..\..\Desktop\1\102000_sword_masterR_1.bmp" />
+    <Image Include="..\..\Desktop\1\102000_sword_masterR_2.bmp" />
+    <Image Include="..\..\Desktop\1\102000_sword_masterR_3.bmp" />
+    <Image Include="..\..\Desktop\1\102000_sword_master_0.bmp" />
+    <Image Include="..\..\Desktop\1\102000_sword_master_1.bmp" />
+    <Image Include="..\..\Desktop\1\102000_sword_master_2.bmp" />
+    <Image Include="..\..\Desktop\1\102000_sword_master_3.bmp" />
+    <Image Include="..\..\Desktop\1\102001_witchR_0.bmp" />
+    <Image Include="..\..\Desktop\1\102001_witchR_1.bmp" />
+    <Image Include="..\..\Desktop\1\102001_witchR_2.bmp" />
+    <Image Include="..\..\Desktop\1\102001_witchR_3.bmp" />
+    <Image Include="..\..\Desktop\1\102001_witch_0.bmp" />
+    <Image Include="..\..\Desktop\1\102001_witch_1.bmp" />
+    <Image Include="..\..\Desktop\1\102001_witch_2.bmp" />
+    <Image Include="..\..\Desktop\1\102001_witch_3.bmp" />
+    <Image Include="..\..\Desktop\1\102002_bloody_warriorR_0.bmp" />
+    <Image Include="..\..\Desktop\1\102002_bloody_warriorR_1.bmp" />
+    <Image Include="..\..\Desktop\1\102002_bloody_warriorR_2.bmp" />
+    <Image Include="..\..\Desktop\1\102002_bloody_warriorR_3.bmp" />
+    <Image Include="..\..\Desktop\1\102002_bloody_warrior_0.bmp" />
+    <Image Include="..\..\Desktop\1\102002_bloody_warrior_1.bmp" />
+    <Image Include="..\..\Desktop\1\102002_bloody_warrior_2.bmp" />
+    <Image Include="..\..\Desktop\1\102002_bloody_warrior_3.bmp" />
+    <Image Include="..\..\Desktop\1\102003_wizardR_0.bmp" />
+    <Image Include="..\..\Desktop\1\102003_wizardR_1.bmp" />
+    <Image Include="..\..\Desktop\1\102003_wizardR_2.bmp" />
+    <Image Include="..\..\Desktop\1\102003_wizardR_3.bmp" />
+    <Image Include="..\..\Desktop\1\102003_wizard_0.bmp" />
+    <Image Include="..\..\Desktop\1\102003_wizard_1.bmp" />
+    <Image Include="..\..\Desktop\1\102003_wizard_2.bmp" />
+    <Image Include="..\..\Desktop\1\102003_wizard_3.bmp" />
+    <Image Include="..\..\Desktop\1\102004_oak_witchR_0.bmp" />
+    <Image Include="..\..\Desktop\1\102004_oak_witchR_1.bmp" />
+    <Image Include="..\..\Desktop\1\102004_oak_witchR_2.bmp" />
+    <Image Include="..\..\Desktop\1\102004_oak_witchR_3.bmp" />
+    <Image Include="..\..\Desktop\1\102004_oak_witch_0.bmp" />
+    <Image Include="..\..\Desktop\1\102004_oak_witch_1.bmp" />
+    <Image Include="..\..\Desktop\1\102004_oak_witch_2.bmp" />
+    <Image Include="..\..\Desktop\1\102004_oak_witch_3.bmp" />
+    <Image Include="..\..\Desktop\1\102005_oak_soldierR_0.bmp" />
+    <Image Include="..\..\Desktop\1\102005_oak_soldierR_1.bmp" />
+    <Image Include="..\..\Desktop\1\102005_oak_soldierR_2.bmp" />
+    <Image Include="..\..\Desktop\1\102005_oak_soldierR_3.bmp" />
+    <Image Include="..\..\Desktop\1\102005_oak_soldier_0.bmp" />
+    <Image Include="..\..\Desktop\1\102005_oak_soldier_1.bmp" />
+    <Image Include="..\..\Desktop\1\102005_oak_soldier_2.bmp" />
+    <Image Include="..\..\Desktop\1\102005_oak_soldier_3.bmp" />
+    <Image Include="..\..\Desktop\1\102006_skt_wizardR_0.bmp" />
+    <Image Include="..\..\Desktop\1\102006_skt_wizardR_1.bmp" />
+    <Image Include="..\..\Desktop\1\102006_skt_wizardR_2.bmp" />
+    <Image Include="..\..\Desktop\1\102006_skt_wizardR_3.bmp" />
+    <Image Include="..\..\Desktop\1\102006_skt_wizard_0.bmp" />
+    <Image Include="..\..\Desktop\1\102006_skt_wizard_1.bmp" />
+    <Image Include="..\..\Desktop\1\102006_skt_wizard_2.bmp" />
+    <Image Include="..\..\Desktop\1\102006_skt_wizard_3.bmp" />
+    <Image Include="..\..\Desktop\1\103000_captainR_0.bmp" />
+    <Image Include="..\..\Desktop\1\103000_captainR_1.bmp" />
+    <Image Include="..\..\Desktop\1\103000_captainR_2.bmp" />
+    <Image Include="..\..\Desktop\1\103000_captainR_3.bmp" />
+    <Image Include="..\..\Desktop\1\103000_captain_0.bmp" />
+    <Image Include="..\..\Desktop\1\103000_captain_1.bmp" />
+    <Image Include="..\..\Desktop\1\103000_captain_2.bmp" />
+    <Image Include="..\..\Desktop\1\103000_captain_3.bmp" />
+    <Image Include="..\..\Desktop\1\103001_reaperR_0.bmp" />
+    <Image Include="..\..\Desktop\1\103001_reaperR_1.bmp" />
+    <Image Include="..\..\Desktop\1\103001_reaperR_2.bmp" />
+    <Image Include="..\..\Desktop\1\103001_reaperR_3.bmp" />
+    <Image Include="..\..\Desktop\1\103001_reaper_0.bmp" />
+    <Image Include="..\..\Desktop\1\103001_reaper_1.bmp" />
+    <Image Include="..\..\Desktop\1\103001_reaper_2.bmp" />
+    <Image Include="..\..\Desktop\1\103001_reaper_3.bmp" />
+    <Image Include="..\..\Desktop\1\103002_commanderR_0.bmp" />
+    <Image Include="..\..\Desktop\1\103002_commanderR_1.bmp" />
+    <Image Include="..\..\Desktop\1\103002_commanderR_2.bmp" />
+    <Image Include="..\..\Desktop\1\103002_commanderR_3.bmp" />
+    <Image Include="..\..\Desktop\1\103002_commander_0.bmp" />
+    <Image Include="..\..\Desktop\1\103002_commander_1.bmp" />
+    <Image Include="..\..\Desktop\1\103002_commander_2.bmp" />
+    <Image Include="..\..\Desktop\1\103002_commander_3.bmp" />
+    <Image Include="..\..\Desktop\1\103003_dragonR_0.bmp" />
+    <Image Include="..\..\Desktop\1\103003_dragonR_1.bmp" />
+    <Image Include="..\..\Desktop\1\103003_dragonR_2.bmp" />
+    <Image Include="..\..\Desktop\1\103003_dragonR_3.bmp" />
+    <Image Include="..\..\Desktop\1\103003_dragon_0.bmp" />
+    <Image Include="..\..\Desktop\1\103003_dragon_1.bmp" />
+    <Image Include="..\..\Desktop\1\103003_dragon_2.bmp" />
+    <Image Include="..\..\Desktop\1\103003_dragon_3.bmp" />
+    <Image Include="..\..\Desktop\1\103004_gollumR_0.bmp" />
+    <Image Include="..\..\Desktop\1\103004_gollumR_1.bmp" />
+    <Image Include="..\..\Desktop\1\103004_gollumR_2.bmp" />
+    <Image Include="..\..\Desktop\1\103004_gollumR_3.bmp" />
+    <Image Include="..\..\Desktop\1\103004_gollum_0.bmp" />
+    <Image Include="..\..\Desktop\1\103004_gollum_1.bmp" />
+    <Image Include="..\..\Desktop\1\103004_gollum_2.bmp" />
+    <Image Include="..\..\Desktop\1\103004_gollum_3.bmp" />
+    <Image Include="..\..\desktop\1\bitmap20.bmp" />
+    <Image Include="..\..\desktop\1\bitmap21.bmp" />
+    <Image Include="..\..\desktop\1\bitmap23.bmp" />
+    <Image Include="..\..\qm.bmp" />
+    <Image Include="..\..\res\bg_map1_0.bmp" />
+    <Image Include="..\..\res\bg_map1_1.bmp" />
+    <Image Include="..\..\res\castle.bmp" />
+    <Image Include="..\..\res\mana_icon.bmp" />
+    <Image Include="..\..\res\pop_icon.bmp" />
+    <Image Include="..\..\res\slot.bmp" />
+    <Image Include="..\..\soldierCard.bmp" />
+    <Image Include="..\..\soldierCard.png" />
+    <Image Include="..\..\윈프듣지마세요\thumb_100000.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_100001.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_100002.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_100003.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_100004.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_100005.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_100006.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_101000.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_101001.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_101002.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_101003.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_101004.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_101005.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_101006.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_102000.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_102001.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_102002.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_102003.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_102004.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_102005.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_102006.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_103000.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_103001.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_103002.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_103003.bmp" />
+    <Image Include="..\..\윈프듣지마세요\thumb_103004.bmp" />
+    <Image Include="res\100000_soldierR_0.bmp" />
+    <Image Include="res\100000_soldierR_1.bmp" />
+    <Image Include="res\100000_soldierR_2.bmp" />
+    <Image Include="res\100000_soldierR_3.bmp" />
+    <Image Include="res\100000_soldier_0.bmp" />
+    <Image Include="res\100000_soldier_1.bmp" />
+    <Image Include="res\100000_soldier_2.bmp" />
+    <Image Include="res\100000_soldier_3.bmp" />
+    <Image Include="res\100001_archerR_0.bmp" />
+    <Image Include="res\100001_archerR_1.bmp" />
+    <Image Include="res\100001_archerR_2.bmp" />
+    <Image Include="res\100001_archerR_3.bmp" />
+    <Image Include="res\100001_archer_0.bmp" />
+    <Image Include="res\100001_archer_1.bmp" />
+    <Image Include="res\100001_archer_2.bmp" />
+    <Image Include="res\100001_archer_3.bmp" />
+    <Image Include="res\100002_warriorR_0.bmp" />
+    <Image Include="res\100002_warriorR_1.bmp" />
+    <Image Include="res\100002_warriorR_2.bmp" />
+    <Image Include="res\100002_warriorR_3.bmp" />
+    <Image Include="res\100002_warrior_0.bmp" />
+    <Image Include="res\100002_warrior_1.bmp" />
+    <Image Include="res\100002_warrior_2.bmp" />
+    <Image Include="res\100002_warrior_3.bmp" />
+    <Image Include="res\100003_artiR_0.bmp" />
+    <Image Include="res\100003_artiR_1.bmp" />
+    <Image Include="res\100003_artiR_2.bmp" />
+    <Image Include="res\100003_artiR_3.bmp" />
+    <Image Include="res\100003_arti_0.bmp" />
+    <Image Include="res\100003_arti_1.bmp" />
+    <Image Include="res\100003_arti_2.bmp" />
+    <Image Include="res\100003_arti_3.bmp" />
+    <Image Include="res\100004_skt_archerR_0.bmp" />
+    <Image Include="res\100004_skt_archerR_1.bmp" />
+    <Image Include="res\100004_skt_archerR_2.bmp" />
+    <Image Include="res\100004_skt_archerR_3.bmp" />
+    <Image Include="res\100004_skt_archer_0.bmp" />
+    <Image Include="res\100004_skt_archer_1.bmp" />
+    <Image Include="res\100004_skt_archer_2.bmp" />
+    <Image Include="res\100004_skt_archer_3.bmp" />
+    <Image Include="res\100005_greenyR_0.bmp" />
+    <Image Include="res\100005_greenyR_1.bmp" />
+    <Image Include="res\100005_greenyR_2.bmp" />
+    <Image Include="res\100005_greenyR_3.bmp" />
+    <Image Include="res\100005_greeny_0.bmp" />
+    <Image Include="res\100005_greeny_1.bmp" />
+    <Image Include="res\100005_greeny_2.bmp" />
+    <Image Include="res\100005_greeny_3.bmp" />
+    <Image Include="res\100006_skt_artiR_0.bmp" />
+    <Image Include="res\100006_skt_artiR_1.bmp" />
+    <Image Include="res\100006_skt_artiR_2.bmp" />
+    <Image Include="res\100006_skt_artiR_3.bmp" />
+    <Image Include="res\100006_skt_arti_0.bmp" />
+    <Image Include="res\100006_skt_arti_1.bmp" />
+    <Image Include="res\100006_skt_arti_2.bmp" />
+    <Image Include="res\100006_skt_arti_3.bmp" />
+    <Image Include="res\101000_knightR_0.bmp" />
+    <Image Include="res\101000_knightR_1.bmp" />
+    <Image Include="res\101000_knightR_2.bmp" />
+    <Image Include="res\101000_knightR_3.bmp" />
+    <Image Include="res\101000_knight_0.bmp" />
+    <Image Include="res\101000_knight_1.bmp" />
+    <Image Include="res\101000_knight_2.bmp" />
+    <Image Include="res\101000_knight_3.bmp" />
+    <Image Include="res\101001_sniperR_0.bmp" />
+    <Image Include="res\101001_sniperR_1.bmp" />
+    <Image Include="res\101001_sniperR_2.bmp" />
+    <Image Include="res\101001_sniperR_3.bmp" />
+    <Image Include="res\101001_sniper_0.bmp" />
+    <Image Include="res\101001_sniper_1.bmp" />
+    <Image Include="res\101001_sniper_2.bmp" />
+    <Image Include="res\101001_sniper_3.bmp" />
+    <Image Include="res\101002_strong_warriorR_0.bmp" />
+    <Image Include="res\101002_strong_warriorR_1.bmp" />
+    <Image Include="res\101002_strong_warriorR_2.bmp" />
+    <Image Include="res\101002_strong_warriorR_3.bmp" />
+    <Image Include="res\101002_strong_warrior_0.bmp" />
+    <Image Include="res\101002_strong_warrior_1.bmp" />
+    <Image Include="res\101002_strong_warrior_2.bmp" />
+    <Image Include="res\101002_strong_warrior_3.bmp" />
+    <Image Include="res\101003_fatal_artiR_0.bmp" />
+    <Image Include="res\101003_fatal_artiR_1.bmp" />
+    <Image Include="res\101003_fatal_artiR_2.bmp" />
+    <Image Include="res\101003_fatal_artiR_3.bmp" />
+    <Image Include="res\101003_fatal_arti_0.bmp" />
+    <Image Include="res\101003_fatal_arti_1.bmp" />
+    <Image Include="res\101003_fatal_arti_2.bmp" />
+    <Image Include="res\101003_fatal_arti_3.bmp" />
+    <Image Include="res\101004_spearR_0.bmp" />
+    <Image Include="res\101004_spearR_1.bmp" />
+    <Image Include="res\101004_spearR_2.bmp" />
+    <Image Include="res\101004_spearR_3.bmp" />
+    <Image Include="res\101004_spear_0.bmp" />
+    <Image Include="res\101004_spear_1.bmp" />
+    <Image Include="res\101004_spear_2.bmp" />
+    <Image Include="res\101004_spear_3.bmp" />
+    <Image Include="res\101005_skt_soldierR_0.bmp" />
+    <Image Include="res\101005_skt_soldierR_1.bmp" />
+    <Image Include="res\101005_skt_soldierR_2.bmp" />
+    <Image Include="res\101005_skt_soldierR_3.bmp" />
+    <Image Include="res\101005_skt_soldier_0.bmp" />
+    <Image Include="res\101005_skt_soldier_1.bmp" />
+    <Image Include="res\101005_skt_soldier_2.bmp" />
+    <Image Include="res\101005_skt_soldier_3.bmp" />
+    <Image Include="res\101006_bone_archerR_0.bmp" />
+    <Image Include="res\101006_bone_archerR_1.bmp" />
+    <Image Include="res\101006_bone_archerR_2.bmp" />
+    <Image Include="res\101006_bone_archerR_3.bmp" />
+    <Image Include="res\101006_bone_archer_0.bmp" />
+    <Image Include="res\101006_bone_archer_1.bmp" />
+    <Image Include="res\101006_bone_archer_2.bmp" />
+    <Image Include="res\101006_bone_archer_3.bmp" />
+    <Image Include="res\102000_sword_masterR_0.bmp" />
+    <Image Include="res\102000_sword_masterR_1.bmp" />
+    <Image Include="res\102000_sword_masterR_2.bmp" />
+    <Image Include="res\102000_sword_masterR_3.bmp" />
+    <Image Include="res\102000_sword_master_0.bmp" />
+    <Image Include="res\102000_sword_master_1.bmp" />
+    <Image Include="res\102000_sword_master_2.bmp" />
+    <Image Include="res\102000_sword_master_3.bmp" />
+    <Image Include="res\102001_witchR_0.bmp" />
+    <Image Include="res\102001_witchR_1.bmp" />
+    <Image Include="res\102001_witchR_2.bmp" />
+    <Image Include="res\102001_witchR_3.bmp" />
+    <Image Include="res\102001_witch_0.bmp" />
+    <Image Include="res\102001_witch_1.bmp" />
+    <Image Include="res\102001_witch_2.bmp" />
+    <Image Include="res\102001_witch_3.bmp" />
+    <Image Include="res\102002_bloody_warriorR_0.bmp" />
+    <Image Include="res\102002_bloody_warriorR_1.bmp" />
+    <Image Include="res\102002_bloody_warriorR_2.bmp" />
+    <Image Include="res\102002_bloody_warriorR_3.bmp" />
+    <Image Include="res\102002_bloody_warrior_0.bmp" />
+    <Image Include="res\102002_bloody_warrior_1.bmp" />
+    <Image Include="res\102002_bloody_warrior_2.bmp" />
+    <Image Include="res\102002_bloody_warrior_3.bmp" />
+    <Image Include="res\102003_wizardR_0.bmp" />
+    <Image Include="res\102003_wizardR_1.bmp" />
+    <Image Include="res\102003_wizardR_2.bmp" />
+    <Image Include="res\102003_wizardR_3.bmp" />
+    <Image Include="res\102003_wizard_0.bmp" />
+    <Image Include="res\102003_wizard_1.bmp" />
+    <Image Include="res\102003_wizard_2.bmp" />
+    <Image Include="res\102003_wizard_3.bmp" />
+    <Image Include="res\102004_oak_witchR_0.bmp" />
+    <Image Include="res\102004_oak_witchR_1.bmp" />
+    <Image Include="res\102004_oak_witchR_2.bmp" />
+    <Image Include="res\102004_oak_witchR_3.bmp" />
+    <Image Include="res\102004_oak_witch_0.bmp" />
+    <Image Include="res\102004_oak_witch_1.bmp" />
+    <Image Include="res\102004_oak_witch_2.bmp" />
+    <Image Include="res\102004_oak_witch_3.bmp" />
+    <Image Include="res\102005_oak_soldierR_0.bmp" />
+    <Image Include="res\102005_oak_soldierR_1.bmp" />
+    <Image Include="res\102005_oak_soldierR_2.bmp" />
+    <Image Include="res\102005_oak_soldierR_3.bmp" />
+    <Image Include="res\102005_oak_soldier_0.bmp" />
+    <Image Include="res\102005_oak_soldier_1.bmp" />
+    <Image Include="res\102005_oak_soldier_2.bmp" />
+    <Image Include="res\102005_oak_soldier_3.bmp" />
+    <Image Include="res\102006_skt_wizardR_0.bmp" />
+    <Image Include="res\102006_skt_wizardR_1.bmp" />
+    <Image Include="res\102006_skt_wizardR_2.bmp" />
+    <Image Include="res\102006_skt_wizardR_3.bmp" />
+    <Image Include="res\102006_skt_wizard_0.bmp" />
+    <Image Include="res\102006_skt_wizard_1.bmp" />
+    <Image Include="res\102006_skt_wizard_2.bmp" />
+    <Image Include="res\102006_skt_wizard_3.bmp" />
+    <Image Include="res\103000_captainR_0.bmp" />
+    <Image Include="res\103000_captainR_1.bmp" />
+    <Image Include="res\103000_captainR_2.bmp" />
+    <Image Include="res\103000_captainR_3.bmp" />
+    <Image Include="res\103000_captain_0.bmp" />
+    <Image Include="res\103000_captain_1.bmp" />
+    <Image Include="res\103000_captain_2.bmp" />
+    <Image Include="res\103000_captain_3.bmp" />
+    <Image Include="res\103001_reaperR_0.bmp" />
+    <Image Include="res\103001_reaperR_1.bmp" />
+    <Image Include="res\103001_reaperR_2.bmp" />
+    <Image Include="res\103001_reaperR_3.bmp" />
+    <Image Include="res\103001_reaper_0.bmp" />
+    <Image Include="res\103001_reaper_1.bmp" />
+    <Image Include="res\103001_reaper_2.bmp" />
+    <Image Include="res\103001_reaper_3.bmp" />
+    <Image Include="res\103002_commanderR_0.bmp" />
+    <Image Include="res\103002_commanderR_1.bmp" />
+    <Image Include="res\103002_commanderR_2.bmp" />
+    <Image Include="res\103002_commanderR_3.bmp" />
+    <Image Include="res\103002_commander_0.bmp" />
+    <Image Include="res\103002_commander_1.bmp" />
+    <Image Include="res\103002_commander_2.bmp" />
+    <Image Include="res\103002_commander_3.bmp" />
+    <Image Include="res\103003_dragonR_0.bmp" />
+    <Image Include="res\103003_dragonR_1.bmp" />
+    <Image Include="res\103003_dragonR_2.bmp" />
+    <Image Include="res\103003_dragonR_3.bmp" />
+    <Image Include="res\103003_dragon_0.bmp" />
+    <Image Include="res\103003_dragon_1.bmp" />
+    <Image Include="res\103003_dragon_2.bmp" />
+    <Image Include="res\103003_dragon_3.bmp" />
+    <Image Include="res\103004_gollumR_0.bmp" />
+    <Image Include="res\103004_gollumR_1.bmp" />
+    <Image Include="res\103004_gollumR_2.bmp" />
+    <Image Include="res\103004_gollumR_3.bmp" />
+    <Image Include="res\103004_gollum_0.bmp" />
+    <Image Include="res\103004_gollum_1.bmp" />
+    <Image Include="res\103004_gollum_2.bmp" />
+    <Image Include="res\103004_gollum_3.bmp" />
+    <Image Include="res\bg_map1_0.bmp" />
+    <Image Include="res\bg_map1_1.bmp" />
+    <Image Include="res\castle.bmp" />
+    <Image Include="res\exit.bmp" />
+    <Image Include="res\main.ico" />
+    <Image Include="res\mana_icon.bmp" />
+    <Image Include="res\pop_icon.bmp" />
+    <Image Include="res\QN.bmp" />
+    <Image Include="res\slot.bmp" />
+    <Image Include="res\thumb_100000.bmp" />
+    <Image Include="res\thumb_100001.bmp" />
+    <Image Include="res\thumb_100002.bmp" />
+    <Image Include="res\thumb_100003.bmp" />
+    <Image Include="res\thumb_100004.bmp" />
+    <Image Include="res\thumb_100005.bmp" />
+    <Image Include="res\thumb_100006.bmp" />
+    <Image Include="res\thumb_101000.bmp" />
+    <Image Include="res\thumb_101001.bmp" />
+    <Image Include="res\thumb_101002.bmp" />
+    <Image Include="res\thumb_101003.bmp" />
+    <Image Include="res\thumb_101004.bmp" />
+    <Image Include="res\thumb_101005.bmp" />
+    <Image Include="res\thumb_101006.bmp" />
+    <Image Include="res\thumb_102000.bmp" />
+    <Image Include="res\thumb_102001.bmp" />
+    <Image Include="res\thumb_102002.bmp" />
+    <Image Include="res\thumb_102003.bmp" />
+    <Image Include="res\thumb_102004.bmp" />
+    <Image Include="res\thumb_102005.bmp" />
+    <Image Include="res\thumb_102006.bmp" />
+    <Image Include="res\thumb_103000.bmp" />
+    <Image Include="res\thumb_103001.bmp" />
+    <Image Include="res\thumb_103002.bmp" />
+    <Image Include="res\thumb_103003.bmp" />
+    <Image Include="res\thumb_103004.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

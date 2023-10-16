@@ -1,0 +1,27 @@
+26
+100000 soldier soldier76 1 15 1 10 1 0 1 90 1
+100001 archer DEX 1 10 2 10 1 0 1 300 2
+100002 warrior MACE 1 20 1 10 1 0 1 90 1
+100003 artilleryman BOMB 1 10 3 10 1 0 1 350 2
+100004 skeleton_archer DEX 1 10 2 10 1 0 1 300 2
+100005 greeny WARRIOR 1 20 1 10 1 0 1 90 1
+100006 skeleton_artilleryman BOMB 1 10 3 10 1 0 1 350 2
+101000 knight knight 4 20 3 15 1 1 1 120 1
+101001 sniper GUN 3 15 4 15 2 1 1 350 2
+101002 strong_warrior WARRIOR 4 20 3 15 1 1 1 120 1
+101003 fatal_artilleryman BOMB 3 15 4 15 2 1 1 400 2
+101004 spear_soldier SPEAR 3 15 4 15 2 1 1 350 2
+101005 skeleton_soldier soldier 4 20 3 15 1 1 1 155 1
+101006 bone_archer DEX 3 15 4 15 2 1 1 400 2
+102000 sword_master soldier 5 25 5 20 2 2 1 160 1
+102001 witch MAGIC 5 15 6 15 2 2 1 450 2
+102002 bloody_warrior WARRIOR 5 25 5 25 2 2 1 170 1
+102003 wizard MAGIC 5 20 6 15 3 2 1 450 2
+102004 oak_witch MAGIC 5 20 7 15 3 2 1 450 2
+102005 oak_soldier soldier 5 25 7 25 2 2 1 290 1
+102006 skeleton_wizard MAGIC 5 15 6 15 1 2 1 450 2
+103000 captain WARRIOR 8 30 8 20 1 3 1 350 1
+103001 reaper MAGIC 7 20 7 30 1 3 2 240 2
+103002 commander WARRIOR 8 25 7 25 1 3 1 270 1
+103003 dragon DRAGON 9 30 8 25 1 3 2 500 2
+103004 gollum GOLLUM 8 30 8 20 1 3 1 270 1
